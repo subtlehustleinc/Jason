@@ -1,0 +1,52 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+.flexdisplay {
+	display: flex;
+	justify-content: center;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+h1 {
+	text-align: center;
+	font-size: 200%;
+	text-decoration: italic;
+	animation: flash 5s infinite;
+	color: white;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+@keyframes flash {
+	0% {background: black}
+	25% {background: darkblue}
+	50% {background: darkgreen}
+	75% {background: darkred}
+	100% {background: black}
+}
+
+iframe {
+	margin-top: 10%;
+}
+/* This media query will apply styles for screens with a width of up to 768 pixels */
+@media (max-width: 771px) {
+.musicplayer iframe {
+  width: 500px; /* Makes the iframe responsive by setting its width to the container's width */
+  height: auto; /* Adjust height accordingly */
+  font-size: 50px;
+}
+}
+
+/* You can add more media queries for different breakpoints */
+@media (max-width: 590px) { /* for smaller screens like mobile devices */
+	
+.musicplayer iframe {
+  width: 300px;
+  height: auto;
+}
+}

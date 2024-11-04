@@ -1,0 +1,48 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.title {
+  text-align: center;
+  font-size: 140%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.vid1 {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  margin-top: 3%;
+  text-align: center;
+  background: black;
+  color: white;
+  font-size: 150%;
+  padding: 2%;
+}
+
+h2:hover {
+  color: yellow;
+}
+
+@media only screen and (max-width: 1080px) {
+  .button {
+    margin-top: 3%;
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 80%;
+    padding: 2%;
+  }
+}
